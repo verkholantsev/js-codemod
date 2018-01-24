@@ -1,0 +1,15 @@
+{
+  "name": "js-codemod",
+  "version": "1.0.0",
+  "author": "Aleksei Verkholantcev <poshli.pismo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-prettier": "^2.5.0",
+    "jscodeshift": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
+  }
+}
