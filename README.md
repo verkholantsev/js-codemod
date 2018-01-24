@@ -16,7 +16,7 @@ yarn install
 
 ### Transformations
 
-#### `console-error-to-empty-catch`
+#### `add-console-error-to-empty-catch`
 
 Transforms empty catch clauses to catch clauses with error logging to console.
 
