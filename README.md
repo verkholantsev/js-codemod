@@ -53,3 +53,41 @@ const fn = function someFunction() {
     console.log(this);
 }.bind(this);
 ```
+
+#### `replace-bind-this-with-arrow-function`
+
+Transforms functions binds with `this` as the only argument to arrow functions.
+
+```js
+// input file
+const boundedFn = function (a, b) {
+    console.log(this, a, b);
+}.bind(this);
+
+// output file
+const boundedFn = (a, b) => {
+    console.log(this, a, b);
+};
+```
+
+Does nothing with calls with more that one argument or with the only argument other that `this` expression.
+
+```js
+// input file
+const boundedFnWithPartiallyAppliedParam = function () {
+    console.log(this);
+}.bind(this, 'some-partially-applied-param');
+
+const boundedFnWithSomethingOtherAsContext = function () {
+    console.log(this);
+}.bind(somethingOtherAsContext);
+
+// output file
+const boundedFnWithPartiallyAppliedParam = function () {
+    console.log(this);
+}.bind(this, 'some-partially-applied-param');
+
+const boundedFnWithSomethingOtherAsContext = function () {
+    console.log(this);
+}.bind(somethingOtherAsContext);
+```
