@@ -1,3 +1,6 @@
+[![Build Status](https://img.shields.io/travis/verkholantsev/js-codemod.svg)](https://travis-ci.org/verkholantsev/js-codemod)
+[![Coverage report](https://img.shields.io/coveralls/github/verkholantsev/js-codemod.svg)](https://coveralls.io/github/verkholantsev/js-codemod)
+
 # js-codemod
 
 ## Setup
