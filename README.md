@@ -36,3 +36,20 @@ try {
   console.error(error);
 }
 ```
+
+
+#### `replace-underscore-bind-to-native-bind`
+
+Transforms underscore and lodash bind to native bind.
+
+```js
+// input file
+const fn = _.bind(function someFunction() {
+    console.log(this);
+}, this);
+
+// output file
+const fn = function someFunction() {
+    console.log(this);
+}.bind(this);
+```
