@@ -4,17 +4,19 @@
   "author": "Aleksei Verkholantcev <poshli.pismo@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "coveralls": "^3.0.0",
     "jscodeshift": "^0.4.0",
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "eslint-plugin-prettier": "^2.5.0",
     "eslint": "^4.16.0",
+    "eslint-plugin-prettier": "^2.5.0",
     "jest": "^22.1.4",
     "prettier": "^1.10.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "publish:coverage": "jest --coverage && cat coverage/lcov.info | coveralls",
   },
   "repository": {
     "type": "git",
