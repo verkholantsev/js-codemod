@@ -26,20 +26,19 @@ Transforms empty catch clauses to catch clauses with error logging to console.
 ```js
 // input file
 try {
-  throw new Error('Error!');
+    throw new Error('Error!');
 } catch (error) {
-  // do nothing
+    // do nothing
 }
 
 // output file
 try {
-  throw new Error('Error!');
+    throw new Error('Error!');
 } catch (error) {
-  // eslint-disable-next-line no-console
-  console.error(error);
+    // eslint-disable-next-line no-console
+    console.error(error);
 }
 ```
-
 
 #### `replace-underscore-bind-to-native-bind`
 
@@ -63,7 +62,7 @@ Transforms functions binds with `this` as the only argument to arrow functions.
 
 ```js
 // input file
-const boundedFn = function (a, b) {
+const boundedFn = function(a, b) {
     console.log(this, a, b);
 }.bind(this);
 
@@ -77,20 +76,20 @@ Does nothing with calls with more that one argument or with the only argument ot
 
 ```js
 // input file
-const boundedFnWithPartiallyAppliedParam = function () {
+const boundedFnWithPartiallyAppliedParam = function() {
     console.log(this);
 }.bind(this, 'some-partially-applied-param');
 
-const boundedFnWithSomethingOtherAsContext = function () {
+const boundedFnWithSomethingOtherAsContext = function() {
     console.log(this);
 }.bind(somethingOtherAsContext);
 
 // output file
-const boundedFnWithPartiallyAppliedParam = function () {
+const boundedFnWithPartiallyAppliedParam = function() {
     console.log(this);
 }.bind(this, 'some-partially-applied-param');
 
-const boundedFnWithSomethingOtherAsContext = function () {
+const boundedFnWithSomethingOtherAsContext = function() {
     console.log(this);
 }.bind(somethingOtherAsContext);
 ```

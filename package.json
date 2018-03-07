@@ -1,25 +1,27 @@
 {
-  "name": "js-codemod",
-  "version": "1.0.0",
-  "author": "Aleksei Verkholantcev <poshli.pismo@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "coveralls": "^3.0.0",
-    "jscodeshift": "^0.4.0",
-    "lodash": "^4.17.5"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-plugin-prettier": "^2.5.0",
-    "jest": "^22.1.4",
-    "prettier": "^1.10.2"
-  },
-  "scripts": {
-    "test": "jest",
-    "publish:coverage": "jest --coverage && cat coverage/lcov.info | coveralls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/verkholantsev/js-codemod.git"
-  }
+    "name": "js-codemod",
+    "version": "1.0.0",
+    "author": "Aleksei Verkholantcev <poshli.pismo@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "coveralls": "^3.0.0",
+        "jscodeshift": "^0.4.0",
+        "lodash": "^4.17.5"
+    },
+    "devDependencies": {
+        "eslint": "^4.16.0",
+        "eslint-plugin-prettier": "^2.5.0",
+        "jest": "^22.1.4",
+        "prettier": "^1.10.2"
+    },
+    "scripts": {
+        "format": "eslint --fix . && prettier --write **/*.{md,json,js}",
+        "lint": "eslint ./**/*.js",
+        "publish:coverage": "jest --coverage && cat coverage/lcov.info | coveralls",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/verkholantsev/js-codemod.git"
+    }
 }
