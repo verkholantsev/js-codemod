@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest",
-    "publish:coverage": "jest --coverage && cat coverage/lcov.info | coveralls",
+    "publish:coverage": "jest --coverage && cat coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
