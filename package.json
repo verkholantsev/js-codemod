@@ -15,5 +15,9 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/verkholantsev/js-codemod.git"
   }
 }
