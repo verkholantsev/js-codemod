@@ -72,7 +72,7 @@ const boundedFn = (a, b) => {
 };
 ```
 
-Does nothing with calls with more that one argument or with the only argument other that `this` expression.
+Does nothing with calls with more that one argument or with the only argument other than `this` expression.
 
 ```js
 // input file
