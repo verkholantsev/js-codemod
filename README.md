@@ -93,3 +93,22 @@ const boundedFnWithSomethingOtherAsContext = function() {
     console.log(this);
 }.bind(somethingOtherAsContext);
 ```
+
+#### `remove-duplicate-object-properties`
+
+Removes duplicate object properties.
+
+```js
+// input file
+const a = {
+    a: 1,
+    a: 1
+};
+
+// output file
+const a = {
+    a: 1
+};
+```
+
+Always keeps the first property from preperty list.
