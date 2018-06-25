@@ -111,4 +111,17 @@ const a = {
 };
 ```
 
-Always keeps the first property from preperty list.
+Always keeps the first property from property list.
+
+```js
+// input file
+const a = {
+    a: 1,
+    b: 2
+};
+
+// output file
+const a = {
+    a: 1
+};
+```
