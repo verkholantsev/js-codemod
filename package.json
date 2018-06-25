@@ -12,7 +12,7 @@
         "eslint": "^5.0.0",
         "eslint-plugin-prettier": "^2.6.1",
         "jest": "^23.1.0",
-        "prettier": "^1.13.5"
+        "prettier": "^1.13.6"
     },
     "scripts": {
         "format": "eslint --fix . && prettier --write **/*.{md,json,js}",
