@@ -11,7 +11,7 @@
         "coveralls": "^3.0.1",
         "eslint": "^5.0.0",
         "eslint-plugin-prettier": "^2.6.1",
-        "jest": "^23.1.0",
+        "jest": "^23.2.0",
         "prettier": "^1.13.6"
     },
     "scripts": {
