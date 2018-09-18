@@ -117,7 +117,7 @@ Always keeps the first property from property list.
 // input file
 const a = {
     a: 1,
-    b: 2
+    a: 2
 };
 
 // output file
